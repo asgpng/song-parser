@@ -1,0 +1,90 @@
+html {
+    /* font-family : sans-serif, sans; */
+    font-family: sans-serif;
+    margin      : 60px;
+}
+body {
+    margin      : 0px;
+}
+.heading {
+    font-weight : bold;
+    font-size   : 16px;
+    margin      : 4px 0 -8px;
+}
+.title {
+    font-weight : bold;
+    font-size   : 20px;
+}
+.credits {
+    font-size   : 10px;
+    position    : relative;
+    top         : 5px;
+}
+span[chords]:before {
+    position    : relative;
+    top         : -1.2em;
+    display     : inline-block;
+    content     : attr(chords);
+    width       : 0;
+    font-weight : bold;
+    font-size   : 14px;
+}
+
+span[chords_verse]:before {
+    position    : relative;
+    top         : -1.2em;
+    display     : inline-block;
+    content     : attr(chords_verse);
+    width       : 0;
+    font-weight : bold;
+    font-size   : 13px;
+}
+span[chords_pre]:before {
+    position    : relative;
+    top         : -1.2em;
+    display     : inline-block;
+    content     : attr(chords_pre);
+    width       : 0;
+    font-weight : bold;
+    font-size   : 13px;
+}
+span[chords_chorus]:before {
+    position    : relative;
+    top         : -1.2em;
+    display     : inline-block;
+    content     : attr(chords_chorus);
+    width       : 0;
+    font-style  : italic;
+    font-weight : bold;
+    font-size   : 13px;
+}
+span[chords_bridge]:before {
+    position    : relative;
+    top         : -1.2em;
+    display     : inline-block;
+    content     : attr(chords_bridge);
+    width       : 0;
+    /* font-style  : italic; */
+    font-weight : bold;
+    font-size   : 13px;
+}
+span[chords_ending]:before {
+    position    : relative;
+    top         : -1.2em;
+    display     : inline-block;
+    content     : attr(chords_ending);
+    width       : 0;
+    /* font-style  : italic; */
+    font-weight : bold;
+    font-size   : 13px;
+}
+span[chords_tag]:before {
+    position    : relative;
+    top         : -1.2em;
+    display     : inline-block;
+    content     : attr(chords_tag);
+    width       : 0;
+    /* font-style  : italic; */
+    font-weight : bold;
+    font-size   : 13px;
+}

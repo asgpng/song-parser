@@ -626,7 +626,7 @@ def html_export(lines):
         else:
             sheet_music.append(line)
     out_text = ''
-    out_text += html_head('/~asg4/songs/static/css/songs.css')
+    out_text += html_head('songs.css')
 
     # append beginning of metadata
     for data in metadata:
@@ -757,24 +757,7 @@ def parse_credit_test():
 
 def main():
 
-    s = time.time()
-    HTML_DIR = 'html'
-    SONG_DIR = 'songs'
-    TEXT_DIR = 'txt'
-    # print chord_lyric_split(chords, lyrics, 'verse')
-    # for i in os.listdir(SONG_DIR):
-    #     html_export(SONG_DIR + '/' + i, HTML_DIR + '/' + i)
-    # html_export(SONG_DIR + '/' + songs[0], HTML_DIR + '/' + songs[0])
-    # print classify_song('txt/Oh Great God')
-    # a = html_export(sys.argv[1], sys.argv[2])
-    # print re.sub('\’', "'", '’')
-    # line = '<body>Body</body>'
-    # print is_xml_line(line)
-    # print parse_credits(credits)
-    # process_upload(read_file(sys.argv[1]))
-    parse_credit_test()
-
-    print 'time: %e' % (time.time() - s)
+    print get_html(read_file(sys.argv[1]))
 
 if __name__=='__main__':
     main()
